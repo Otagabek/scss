@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container h1 {
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .container h1 {
+    margin-left: 180px;
+  }
+}
+.container p {
+  text-align: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+@media (max-width: 500px) {
+  .container p {
+    margin-left: 180px;
+  }
+}
+.container .cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.container .cards .card {
+  margin-left: 50px;
+  margin-top: 20px;
+  width: 550px;
+  height: 300px;
+  position: relative;
+  border: 2px solid red;
+}
+.container .cards .card img {
+  width: 550px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container .cards .card h2 {
+  position: absolute;
+  margin-top: -230px;
+  margin-left: 40px;
+  color: white;
+}
+.container .cards .card p {
+  font-size: 25px;
+  color: rgb(215, 0, 0);
+  position: absolute;
+  margin-top: -190px;
+  margin-left: 85px;
+}
+.container .cards .card button {
+  width: 200px;
+  height: 50px;
+  border-radius: 50px;
+  position: absolute;
+  margin-top: -130px;
+  margin-left: 20px;
+  background-color: red;
+  color: white;
+}
+@media (max-width: 600px) {
+  .container .cards {
+    grid-template-columns: 1fr;
+    margin-left: -50px;
+  }
+}/*# sourceMappingURL=style.css.map */
